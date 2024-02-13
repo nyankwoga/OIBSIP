@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Add a background color for better visibility */
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: black; /* Set the text color to white */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: white;
+}
+.body {
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 100vh;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.content {
+    display: flex; /* Add flex display */
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    margin-left: 200px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-right: 20px; /* Add margin to the right for spacing */
+}
+
+img {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    border-radius: 10px;
+}
+
+section button {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section button:hover {
+    background-color: lightpink;
+}
+/* Add more styles as needed */

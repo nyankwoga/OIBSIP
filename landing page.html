@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="portfolio.css"> <!-- Link to your CSS file -->
     <title>Your Landing Page</title>
     <style>
         body {
@@ -84,7 +86,10 @@ section img {
             width: 100%;
             color:black
         }
-
+        .fa-instagram {
+      background: #125688;
+      color: white;
+    }
         @media only screen and (max-width: 600px) {
             section {
         flex-direction: column; /* Stack items vertically on small screens */
@@ -121,18 +126,32 @@ section img {
     <section>       
         <img src="./img/body-image.jpeg" alt="Image">
         <div>
-            <h2>About Us</h2>
+            <h2>Who Are We</h2>
             <p>We Naturally Formulated Linen & Room Sprays,Shower Steamers Made for you with Love.</p>
             <p>Explore Our Range Of Products!</p>
         </div>        
     </section>
-<section>
-    <img src="./img/sprays-image.jpeg" alt="Image" style="max-width: 300px; max-height: auto;">
+    <section>
+        <img src="./img/sprays-image.jpeg" alt="Image" style="max-width: 300px; max-height: auto;">
+    
+        <div>
+            <h2>"Transform your living spaces with the timeless elegance of linen and the refreshing allure of our room sprays. Embrace the subtle luxury of linen, known for its natural, breathable, and effortlessly chic qualities. Our linen and room sprays are meticulously crafted to infuse your surroundings with a delicate fragrance that transcends the ordinary."</h2>
+        </div>
+    
+        <img src="./img/candles-image.jpeg" alt="Image" style="max-width: 250px; max-height: auto;">
 
-    <Img src="./img/candles-image.jpeg" alt="Image" style="max-width: 250px; max-height: auto;">
-    <Img src="./img/shower-steamers-image.jpeg" alt="Image" style="max-width: 200px; max-height: auto;">
-</section>
+        <div>Immerse yourself in the enchanting dance of flickering flames and captivating aromas with our exquisite scented candles. Crafted with precision and passion, each candle is a testament to the art of olfactory delight. Set the mood and elevate your surroundings as the delicate fragrance weaves a tapestry of warmth and tranquility.
+           
+        </div>
+        <img src="./img/shower-steamers-image.jpeg" alt="Image" style="max-width: 200px; max-height: auto;">
+
+        <div>
+            Ignite your senses with the gentle glow and intoxicating fragrance, creating an atmosphere that soothes, uplifts, and inspires. From cozy nights in to elegant gatherings, let the soft radiance and captivating scents of our candles transform ordinary moments into extraordinary memories.
+        </div>
+    </section>
+    
     <footer>
+        <li> <a href="#" class="fa fa-instagram"> </a> </li>
         &copy; 2024 Jade Scent. All rights reserved.
     </footer>
 
