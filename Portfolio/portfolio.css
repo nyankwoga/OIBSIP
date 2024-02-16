@@ -68,7 +68,7 @@ img {
 
 section button {
     background-color: pink;
-    color: white;
+    color: blue;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -79,4 +79,29 @@ section button {
 section button:hover {
     background-color: lightpink;
 }
+
+section#about {
+    background-color: rgb(228, 221, 222);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin at the top for spacing */   
+    text-align: center;
+}
+h3 {
+    font-size: 1em;
+    margin-right: 50px; 
+}
 /* Add more styles as needed */
+.p {
+    font-size: 1em;
+    margin-right: 20px;
+    text-align: center;
+}
+
+section#services {
+    background-color: whitesmoke(228, 221, 222);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin at the top for spacing */   
+    text-align: center;
+}
