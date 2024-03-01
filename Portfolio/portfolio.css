@@ -2,68 +2,88 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Add a background color for better visibility */
+    background-color: white;
+    position: relative;
 }
 
-.sidebar {
-    height: 100%;
-    width: 200px;
+.header {
+    background-color: #f1f1f1;
+    padding: 10px 0;
     position: fixed;
-    z-index: 1;
     top: 0;
-    left: 0;
-    background-color: whitesmoke;
-    padding-top: 20px;
+    width: 100%;
+    z-index: 1000;
 }
 
-.sidebar h2 {
-    color: black; /* Set the text color to white */
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
+.header header {
+    display: flex;
+    align-items: center;
 }
 
-.sidebar a {
-    padding: 15px;
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block;
+    color: blue;
+    margin: 0 10px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.sidebar a:hover {
-    background-color: white;
-}
-.body {
-display: flex;
-flex-direction: row;
-align-items: center;
-height: 100vh;
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+.social-icons li {
+    margin-right: 30px;
+}
 
-.content {
-    display: flex; /* Add flex display */
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    margin-left: 200px; /* Adjust based on the width of the sidebar */
-    padding: 20px;
+.social-icons a {
+    text-decoration: none;
+    color: #050505;
+}
+
+#home .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 190px;
+    padding-bottom: 20rem;
+}
+
+#home .home-container .img {
+    flex: 1;
+}
+
+#home .home-container .img img {
+    width: 100%;
+}
+
+#home .home-container .text-content {
+    flex: 1;
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+
+.img {
+    margin-top: 20px;
     text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    margin-right: 20px; /* Add margin to the right for spacing */
 }
 
 img {
     width: 100%;
-    max-width: 400px; /* Adjust the max-width as needed */
+    max-width: 300px;
     border-radius: 10px;
+    align-items: center;
 }
 
 section button {
@@ -83,24 +103,26 @@ section button:hover {
 section#about {
     background-color: rgb(228, 221, 222);
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px; /* Add margin at the top for spacing */   
     text-align: center;
+    padding-left: 40rem;
+    padding-right: 30rem;
 }
+
 h3 {
     font-size: 1em;
-    margin-right: 50px; 
+    margin-right: 50px;
 }
-/* Add more styles as needed */
+
 .p {
-    font-size: 1em;
-    margin-right: 20px;
+    font-size: 2em;
+    margin-right: 50px;
     text-align: center;
 }
 
-#services {
+#projects {
     background-color: #f9f9f9;
     padding: 60px 0;
+    padding-bottom: 60px;
 }
 
 .card-container {
@@ -141,25 +163,27 @@ h3 {
     flex-wrap: wrap;
 }
 
-.col-lg-4, .col-md-4, .col-12 {
-    flex: 0 0 30%; /* Adjust the width of each card as needed */
+.col-lg-4,
+.col-md-4,
+.col-12 {
+    flex: 0 0 30%;
     margin-bottom: 30px;
 }
 
-.experience {
+.project {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-.experience h3 {
+.project h3 {
     color: #333;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.experience p {
+.project p {
     color: #666;
     font-size: 14px;
     margin-bottom: 0;
@@ -170,15 +194,18 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .col-lg-4, .col-md-4, .col-12 {
+
+    .col-lg-4,
+    .col-md-4,
+    .col-12 {
         flex: 0 0 100%;
     }
 }
 
-
 #experience {
     background-color: rgb(228, 221, 222);
     padding: 60px 0;
+    padding-bottom: 60px;
 }
 
 .container {
@@ -219,7 +246,9 @@ h3 {
     justify-content: space-between;
 }
 
-.col-lg-4, .col-md-4, .col-12 {
+.col-lg-4,
+.col-md-4,
+.col-12 {
     flex: 0 0 32%;
     margin-bottom: 30px;
 }
@@ -247,18 +276,134 @@ h3 {
     margin-top: 10px;
 }
 
+#contact {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Add this line for space between columns */
+}
+
+.col-md-4,
+.col-md-8 {
+    flex: 1;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Add this line for space at the bottom of each column */
+}
+.col-md-4 {
+    flex: 0 0 calc(33.333333% - 5rem);
+    /* Adjusted flex value and added margin */
+    margin-right: 5rem;
+    /* Added margin to the right */
+}
+
+.col-md-8.res-mt {
+    flex: 0 0 calc(66.666666% - 80px);
+    /* Adjusted flex value and added margin */
+    margin-left: 80px;
+    /* Added margin to the left */
+}
+.contact-info,
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-info {
+    flex-basis: 300px;
+    /* Adjust the width as needed */
+}
+
+.contact-left {
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    color: #333;
+    font-size: 24px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 15px;
+}
+
+i {
+    font-size: 24px;
+}
+
+.contact-form {
+    box-sizing: border-box;
+}
+
+.contact-form h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 @media (max-width: 768px) {
-    .col-lg-4, .col-md-4, .col-12 {
+
+    .col-lg-4,
+    .col-md-4,
+    .col-12 {
         flex: 0 0 100%;
     }
 }
 
 footer {
-    background-color: rgba(214, 193, 193, 0.7); /* Semi-transparent background for better readability */
+    background-color: rgba(214, 193, 193, 0.7);
     text-align: center;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
-    color:black
+    color: black
+    z-index: 9999;
 }
