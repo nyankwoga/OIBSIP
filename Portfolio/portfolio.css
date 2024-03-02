@@ -56,7 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 190px;
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
 }
 
 #home .home-container .img {
@@ -87,7 +87,7 @@ img {
 }
 
 section button {
-    background-color: pink;
+    background-color: #f1bacf;
     color: blue;
     padding: 10px 20px;
     font-size: 16px;
@@ -205,7 +205,8 @@ h3 {
 #experience {
     background-color: rgb(228, 221, 222);
     padding: 60px 0;
-    padding-bottom: 60px;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .container {
@@ -275,125 +276,87 @@ h3 {
 .ex-left {
     margin-top: 10px;
 }
+#contact-info {
 
-#contact {
-    background-color: #f8f8f8;
-    padding: 60px 0;
+padding: 60px 150px;
+
 }
-
-.heading {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Add this line for space between columns */
-}
-
-.col-md-4,
-.col-md-8 {
-    flex: 1;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    /* Add this line for space at the bottom of each column */
-}
-.col-md-4 {
-    flex: 0 0 calc(33.333333% - 5rem);
-    /* Adjusted flex value and added margin */
-    margin-right: 5rem;
-    /* Added margin to the right */
-}
-
-.col-md-8.res-mt {
-    flex: 0 0 calc(66.666666% - 80px);
-    /* Adjusted flex value and added margin */
-    margin-left: 80px;
-    /* Added margin to the left */
-}
-.contact-info,
-.contact-form {
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
 .contact-info {
-    flex-basis: 300px;
-    /* Adjust the width as needed */
-}
-
-.contact-left {
-    margin-bottom: 20px;
-}
-
-.sub-title {
-    color: #333;
-    font-size: 24px;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-ul li {
-    margin-right: 15px;
-}
-
-i {
-    font-size: 24px;
-}
-
-.contact-form {
-    box-sizing: border-box;
-}
-
-.contact-form h3 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.form-control {
     width: 100%;
-    padding: 10px;
+    float: left;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+    margin: 20px 80px 20px 50px;
+    justify-content: center;
+    padding-right: 20rem;
+    padding-bottom: 5rem;        
+}
+
+.contact-left h3 {
+    border-left: 2px solid #ea4020;
+    padding-left: 10px;
+    color: #565656;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.contact-left p {
+    padding-left: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.contact-button {
-    display: inline-block;
-    background-color: #1e90ff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+.contact-left a {
+    padding-left: 10px;
+    margin-bottom: 7px;
+    width: 100%;
+    float: left;
     text-decoration: none;
+    color: black;
 }
-@media (max-width: 768px) {
+.contact-info ul {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0px;
+}
+.contact-info ul li {
+    float: left;
+    padding-left: 10px;
+}
 
-    .col-lg-4,
-    .col-md-4,
-    .col-12 {
-        flex: 0 0 100%;
+.contact-info ul li i {
+    font-size: 22px;
+    color: black;
+}
+.contact-form {
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 50px 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(245, 247, 250, 0.125);
+    padding-right: 20rem;
+    padding-bottom: 2rem;
+}
+.contact-form h3 {
+    border-left: 2px solid #ea4020;
+    padding-left: 10px;
+}
+.contact-form .form-control {
+    padding: 6px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .contact-left p {
+        padding-left: 10px;
+        margin-top: 11px;
     }
 }
 
@@ -405,5 +368,13 @@ footer {
     bottom: 0;
     width: 100%;
     color: black
-    z-index: 9999;
+}
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db608f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
